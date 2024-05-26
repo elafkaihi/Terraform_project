@@ -74,3 +74,17 @@ variable "multi_az" {
   description   = "db multi az"
   type          = bool
 }
+
+#ALB variables
+variable "certificate_arn" {
+  default       = "your certificate arn"
+  description   = "certificate_arn"
+  type          = bool
+}
+
+#sns variable
+variable "operator_email" {
+  default       = "lafkaihi.mehdi@gmail.com"
+  description   = "operator email"
+  type          = string
+}
