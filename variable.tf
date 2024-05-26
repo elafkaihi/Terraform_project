@@ -88,3 +88,28 @@ variable "operator_email" {
   description   = "operator email"
   type          = string
 }
+
+#asg variable
+variable "launch_template_name" {
+  default       = "dev-launch-template"
+  description   = "launch_template_name"
+  type          = string
+}
+
+variable "ec2_image_id" {
+  default       = "your_image_id"
+  description   = "image id "
+  type          = string
+}
+
+variable "ec2_instance_type" {
+  default       = "t2.micro"
+  description   = "ec2_instance_type"
+  type          = string
+}
+
+variable "ec2_key_name" {
+  default       = "your_ec2_keyname"
+  description   = "ec2_key_name"
+  type          = string
+} 
