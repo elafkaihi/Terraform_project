@@ -49,3 +49,28 @@ variable "ssh_location" {
   description   = "my ip"
   type          = string
 }
+
+#RDS variables
+variable "db_snapshot_identifier" {
+  default       = "xxxxxxxxx"
+  description   = "arn of the snapshot"
+  type          = string
+}
+
+variable "db_instance_class" {
+  default       = "db.t2.micro"
+  description   = "db instance type"
+  type          = string
+}
+
+variable "db_instance_identifier" {
+  default       = "dev-db-rds"
+  description   = "db instance identifier"
+  type          = string
+}
+
+variable "multi_az" {
+  default       = false
+  description   = "db multi az"
+  type          = bool
+}
