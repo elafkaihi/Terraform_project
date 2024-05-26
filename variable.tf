@@ -41,3 +41,11 @@ variable "private_data_subnet_az2_cidr" {
   description   = "private_data_az2 cidr block"
   type          = string
 }
+
+#SG variables
+
+variable "ssh_location" {
+  default       = "0.0.0.0/0"
+  description   = "my ip"
+  type          = string
+}
